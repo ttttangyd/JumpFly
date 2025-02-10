@@ -63,7 +63,7 @@ def extract_nested_categories(element, parent_category=""):
             else:
                 # Only add the lowest-level category
                 if category_link:
-                    categories.append({"Category": full_category, "URL": category_link})
+                    categories.append({"Category": category_name, "URL": category_link})
                     category_count += 1  # Increment count
 
     return categories, category_count

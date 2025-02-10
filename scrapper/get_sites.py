@@ -80,17 +80,10 @@ def get_product_data(landing_page_element, page_num, base_url):
 
     return all_product_data
 
-i = 0
 total_start_time = time.time()  # Start total timer
 
 # Iterate through each category URL
 for index, row in categories_df.iterrows():
-    
-    if i == 5:  # Limit to 5 categories for testing
-        break
-    else:
-        i += 1
-
     category_name = row["Category"]
     category_url = row["URL"]
 
